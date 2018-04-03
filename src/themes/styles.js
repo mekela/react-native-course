@@ -89,7 +89,9 @@ const styles = StyleSheet.create({
     borderTopWidth:1,
     borderTopColor: "#eee",
     padding:10,
-    backgroundColor:"#ddd"
+    backgroundColor:"#ddd",
+    flexDirection:'row',
+    justifyContent: 'space-around'
   },
 
 });
