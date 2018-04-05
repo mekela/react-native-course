@@ -7,9 +7,11 @@ import styles from "../themes/styles"
 
 const Layout = (props)=> (
   <View style={ styles.container }>
-    <Header title="welcome!!!"/>
+    <Header/>
     <View style={styles.content}>
+
       {props.children}
+
     </View>
     <Nav/>
   </View>

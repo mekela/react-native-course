@@ -4,6 +4,8 @@ var {height, width} = Dimensions.get('window');
 
 const defaultFontSize = 10;
 
+export const placeholderColor= "";
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,

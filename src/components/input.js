@@ -1,18 +1,25 @@
-import { View, TextInput} from "react-native";
-import React from 'react';
+import {View, TextInput} from "react-native";
+import React, {Component} from 'react';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import styles from "../themes/styles";
 
 
-const Input = (props) => (
+class Input extends Component {
 
-    <View style={[styles.inputWrapper, props.additionalStyle]}>
-      <View style={styles.iconWrapper}>
-        <Icon name={ props.icon } size={20} color="#fcfcfd" style={styles.inputIcon}/>
+
+
+  render() {
+    const {props} = this;
+    return (
+      <View style={[styles.inputWrapper, props.additionalStyle]}>
+        <View style={styles.iconWrapper}>
+          <Icon name={props.icon} size={20} color="#fcfcfd" style={styles.inputIcon}/>
+        </View>
+        <TextInput placeholder={props.placeholder} placeholderTextColor="#fcfcfd"/>
       </View>
-      <TextInput placeholder={ props.placeholder } placeholderTextColor="#fcfcfd"/>
-    </View>
-  )
+    )
+  }
+}
 
 
 export default Input;
